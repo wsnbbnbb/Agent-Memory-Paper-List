@@ -47,6 +47,12 @@ Through this structure, we hope to provide a conceptual foundation for rethinkin
 
 
 ## 📚 Paper list
+### Edge Memory
+[2025/9]EFFICIENT ON-DEVICE AGENTS VIA ADAPTIVE CONTEXT MANAGEMENT [https://arxiv.org/pdf/2511.03728]
+[2025/12]MemLoRA: Distilling Expert Adapters for On-Device Memory Systems[https://arxiv.org/pdf/2512.04763]
+[2025/10]Mnemosyne: An Unsupervised, Human-Inspired Long-Term Memory Architecture for Edge-Based [https://arxiv.org/pdf/2510.08601]
+
+
 
 ### Factual Memory
 
