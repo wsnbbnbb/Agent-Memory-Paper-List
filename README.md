@@ -13,6 +13,11 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?)](LICENSE)
 
 </div>
+CCFA
+
+
+
+
 
 ## 📢 News
 
@@ -48,18 +53,18 @@ Through this structure, we hope to provide a conceptual foundation for rethinkin
 
 ## 📚 Paper list
 ### Edge Memory
-[2025/9]EFFICIENT ON-DEVICE AGENTS VIA ADAPTIVE CONTEXT MANAGEMENT [https://arxiv.org/pdf/2511.03728]
-[2025/12]MemLoRA: Distilling Expert Adapters for On-Device Memory Systems[https://arxiv.org/pdf/2512.04763]
-[2025/10]Mnemosyne: An Unsupervised, Human-Inspired Long-Term Memory Architecture for Edge-Based [https://arxiv.org/pdf/2510.08601]
+- [2025/9]EFFICIENT ON-DEVICE AGENTS VIA ADAPTIVE CONTEXT MANAGEMENT [https://arxiv.org/pdf/2511.03728]
+- [2025/12]MemLoRA: Distilling Expert Adapters for On-Device Memory Systems[https://arxiv.org/pdf/2512.04763]
+- [2025/10]Mnemosyne: An Unsupervised, Human-Inspired Long-Term Memory Architecture for Edge-Based [https://arxiv.org/pdf/2510.08601]
 
 ## 待定
-[2026/1]Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents[https://arxiv.org/pdf/2601.01885]
+- [2026/1]Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents[https://arxiv.org/pdf/2601.01885]
 EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning
 05 Jan 2026
 
-Does Memory Need Graphs? A Unified Framework and Empirical Analysis for Long-Term Dialog Memory
+- Does Memory Need Graphs? A Unified Framework and Empirical Analysis for Long-Term Dialog Memory
 04 Jan 2026
-R-Debater: Retrieval-Augmented Debate Generation through Argumentative Memory
+- R-Debater: Retrieval-Augmented Debate Generation through Argumentative Memory
 31 Dec 2025
 
 ### Factual Memory
