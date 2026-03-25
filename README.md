@@ -58,6 +58,8 @@ Through this structure, we hope to provide a conceptual foundation for rethinkin
 - [2025/10]Mnemosyne: An Unsupervised, Human-Inspired Long-Term Memory Architecture for Edge-Based [https://arxiv.org/pdf/2510.08601]
 - [2026/3]CLAG: Adaptive Memory Organization via Agent-Driven Clustering for Small Language Model Agents [https://arxiv.org/abs/2603.15421]
 
+-[2024/09]TinyAgent: Function Calling at the Edge[https://arxiv.org/abs/2409.00608]
+
 ## 待定
 - [2026/1]Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents[https://arxiv.org/pdf/2601.01885]
 EverMemOS: A Self-Organizing Memory Operating System for Structured Long-Horizon Reasoning
