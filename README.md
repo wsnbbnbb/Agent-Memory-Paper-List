@@ -1,54 +1,11 @@
 <!-- # Memory in the Age of AI Agents: A Survey -->
 
-<h1 align="center">
-  <strong>Memory in the Age of AI Agents: A Survey</strong>
-</h1>
 
-<div align="center">
-
-[![arXiv](https://img.shields.io/badge/Arxiv-2512.13564-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2512.13564)
-[![Hugging Face](https://img.shields.io/badge/Hugging_Face-2512.13564-292929.svg?logo=huggingface)](https://huggingface.co/papers/2512.13564)
-[![Contribution Welcome](https://img.shields.io/badge/Contributions-welcome-Green?logo=mercadopago&logoColor=white)](https://github.com/Shichun-Liu/Agent-Memory-Paper-List/pulls)
-[![GitHub star chart](https://img.shields.io/github/stars/Shichun-Liu/Agent-Memory-Paper-List?style=social)](https://star-history.com/#Shichun-Liu/Agent-Memory-Paper-List)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?)](LICENSE)
-
-</div>
 CCFA
 
 
 
 
-
-## 📢 News
-
-- [2025/12/16] 🎉 Our paper is featured on [Huggingface Daily Paper #1](https://huggingface.co/papers/date/2025-12-16)!
-- [2025/12/16] 📚 We create this repository to maintain a paper list on Agent Memory. More papers are coming soon!
-- [2025/12/16] 📄 Our survey is released! See [Memory in the Age of AI Agents: A Survey](https://arxiv.org/abs/2512.13564) for the paper!
-
-
-<div align="center">
-  <img src="assets/main.png" alt="Overview of agent memory organized by the unified taxonomy" width="80%" />
-  <p><em><strong>Figure:</strong> Overview of agent memory organized by the unified taxonomy of <strong>forms</strong>, <strong>functions</strong>, and <strong>dynamics</strong>.</em></p>
-</div>
-
-## 👋 Introduction
-
-Memory serves as the cornerstone of foundation model-based agents, underpinning their ability to perform long-horizon reasoning, adapt continually, and interact effectively with complex environments.
-
-Despite the explosion of research in this field, the landscape remains highly fragmented, with loosely defined terminologies and inconsistent taxonomies. This repository aims to bridge this gap. We distinguish Agent Memory from related concepts like RAG and Context Engineering, and provide a comprehensive overview through three unified lenses:
-
-- Forms (What Carries Memory?): Categorizing memory by its storage medium—Token-level (explicit & discrete), Parametric (implicit weights), and Latent (hidden states) .
-- Functions (Why Agents Need Memory?): Moving beyond simple temporal divisions to a functional taxonomy: Factual (knowledge), Experiential (insights & skills), and Working Memory (active context management) .
-- Dynamics (How Memory Evolves?): Dissecting the operational lifecycle into Formation (extraction), Evolution (consolidation & forgetting), and Retrieval (access strategies) .
-
-Through this structure, we hope to provide a conceptual foundation for rethinking memory as a first-class primitive in future agentic intelligence.
-
-## 💡 Concepts
-
-<div align="center">
-<img src="assets/concept.png" alt="Conceptual Comparison" width="80%" />
-  <p><em><strong>Figure:</strong> Conceptual comparison of <strong>Agent Memory</strong> with <strong>LLM Memory</strong>, <strong>RAG</strong>, and <strong>Context Engineering</strong>.</em></p>
-</div>
 
 
 ## 📚 Paper list
@@ -57,8 +14,8 @@ Through this structure, we hope to provide a conceptual foundation for rethinkin
 - [2025/12]MemLoRA: Distilling Expert Adapters for On-Device Memory Systems[https://arxiv.org/pdf/2512.04763]
 - [2025/10]Mnemosyne: An Unsupervised, Human-Inspired Long-Term Memory Architecture for Edge-Based [https://arxiv.org/pdf/2510.08601]
 - [2026/3]CLAG: Adaptive Memory Organization via Agent-Driven Clustering for Small Language Model Agents [https://arxiv.org/abs/2603.15421]
-
--[2024/09]TinyAgent: Function Calling at the Edge[https://arxiv.org/abs/2409.00608]
+- [2026/2] Shodh-Memory: A Cognitive Memory System for Edge-Native AI Agents[https://www.shodh-memory.com/shodh_memory.pdf]
+- [2024/09]TinyAgent: Function Calling at the Edge[https://arxiv.org/abs/2409.00608]
 
 ## 待定
 - [2026/1]Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents[https://arxiv.org/pdf/2601.01885]
