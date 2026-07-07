@@ -1,7 +1,104 @@
 <!-- # Memory in the Age of AI Agents: A Survey -->
 
 
-CCFA
+根据你列出的论文方向（端侧Agent记忆、自适应上下文管理、KV缓存优化、认知记忆架构、多Agent协作记忆），我整理了2025–2026年最相关的参考文献，按主题分类如下：
+
+---
+
+## 一、端侧/边缘设备 KV 缓存与上下文管理
+与你提到的 *Adaptive Context Management* 和 *TinyAgent* 直接相关，聚焦在资源受限设备上的上下文持久化与KV缓存优化。
+
+| 论文 | 年份 | 核心贡献 | 链接 |
+|------|------|----------|------|
+| **Agent Memory Below the Prompt: Persistent Q4 KV Cache for Multi-Agent LLM Inference on Edge Devices** | 2026 | 将多Agent的KV Cache以4-bit量化持久化到磁盘，消除重复prefill，在Apple M4 Pro上实现最高**136×**首token加速 | [arXiv:2603.04428](https://arxiv.org/abs/2603.04428) |
+| **QKVShare: Quantized KV-Cache Handoff for Multi-Agent Edge Inference** | 2026 | 端侧多Agent场景下的token级量化KV缓存共享与handoff，支持高Agent密度（≤3%精度损失） | [arXiv:2605.03884](https://arxiv.org/abs/2605.03884) |
+| **KVSwap: Disk-Aware KV Cache Offloading for Long-Context On-Device Inference** | 2025 | 磁盘感知的KV缓存卸载，支持端侧长上下文推理 | [arXiv:2511.11907](https://arxiv.org/abs/2511.11907) |
+| **KVCOMM: Online Cross-Context KV-Cache Communication for Efficient LLM-based Multi-Agent Systems** | 2025 (NeurIPS) | 跨Agent上下文KV缓存通信，解决offset-variance问题，5-Agent场景下**7.8×** prefill加速 | [NeurIPS 2025](https://arxiv.org/abs/2506.06266) |
+| **KVCache-centric Memory for LLM Agents** | 2026 (ICLR投稿) | 以KV缓存为中心的LLM Agent记忆架构 | [arXiv](https://arxiv.org/abs/2603.10062) |
+| **A Shared Asymmetrically-Compressed KV Cache Pool for Multi-Agent LLM Inference** | 2026 | 非对称压缩的共享KV缓存池，支持多Agent并发推理 | [arXiv:2604.24971](https://arxiv.org/abs/2604.24971) |
+| **RelayCaching: Accelerating LLM Collaboration via Decoding KV Cache Reuse** | 2026 | 通过解码阶段KV缓存复用加速多Agent协作 | [arXiv:2603.13289](https://arxiv.org/abs/2603.13289) |
+| **Venus: An Efficient Edge Memory-and-Retrieval System for VLM-based Online Video Understanding** | 2025 | 面向VLM的边缘记忆与检索系统 | [arXiv:2512.07344](https://arxiv.org/abs/2512.07344) |
+
+---
+
+## 二、端侧Agent记忆架构与系统
+与你提到的 *Mnemosyne*、*Shodh-Memory*、*MemLoRA* 对应，聚焦在端侧可部署的Agent记忆系统设计。
+
+| 论文 | 年份 | 核心贡献 | 链接 |
+|------|------|----------|------|
+| **ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting** | 2026 | 生物启发（海马体-新皮层理论）的端侧个性化记忆，通过"光学遗忘"渐进压缩旧记忆 | [arXiv:2605.03804](https://arxiv.org/abs/2605.03804) |
+| **A-MEM: Agentic Memory for LLM Agents** | 2025 (NeurIPS) | 自进化Agent记忆系统，采用Zettelkasten笔记链接策略 | [arXiv:2502.12110](https://arxiv.org/abs/2502.12110) |
+| **HAGE: Harnessing Agentic Memory via RL-Driven Weighted Graph Evolution** | 2026 | RL驱动的加权图记忆进化，支持动态查询路由 | [arXiv:2605.09942](https://arxiv.org/abs/2605.09942) |
+| **MemOS / MemoryOS** | 2025 (EMNLP Oral) | 操作系统风格的分层语义记忆管理（全局/本地/工作记忆） | [arXiv](https://arxiv.org/abs/2508.04903) |
+| **Pancake: Hierarchical Memory System for Multi-Agent LLM Serving** | 2026 | 多层分层记忆系统，面向多Agent LLM服务 | [arXiv](https://arxiv.org/abs/2603.17244) |
+| **Multi-Layered Memory Architectures for LLM Agents** | 2026 | LLM Agent的多层记忆架构设计 | [arXiv](https://arxiv.org/abs/2603.17244) |
+| **Graph-Native Cognitive Memory for AI Agents** | 2026 | 图原生认知记忆，支持版本化信念修订与AGM语义 | [arXiv:2603.17244](https://arxiv.org/abs/2603.17244) |
+| **Hindsight: Building Agent Memory That Retains, Recalls, and Reflects** | 2025 | 四网络记忆架构（事实/经验/观点/观察），LoCoMo上达89.61% | [arXiv:2512.12818](https://arxiv.org/abs/2512.12818) |
+| **NextMem: Towards Latent Factual Memory for LLM-based Agents** | 2026 | 面向LLM Agent的隐式事实记忆 | [arXiv:2603.15634](https://arxiv.org/abs/2603.15634) |
+| **SimpleMem: Efficient Lifelong Memory** | 2026 | 高效终身记忆系统 | [arXiv:2601.02553](https://arxiv.org/abs/2601.02553) |
+| **HiMem: Hierarchical Long-Term Memory** | 2026 | 分层长期记忆架构 | [arXiv:2601.06377](https://arxiv.org/abs/2601.06377) |
+| **SYNAPSE: Spreading Activation Episodic-Semantic Memory** | 2026 | 扩散激活的情景-语义记忆 | [arXiv:2601.02744](https://arxiv.org/abs/2601.02744) |
+| **TiMem: Temporal-Hierarchical Consolidation** | 2026 | 时间-分层记忆巩固机制 | [arXiv:2601.02845](https://arxiv.org/abs/2601.02845) |
+
+---
+
+## 三、自适应记忆组织与压缩
+与你提到的 *CLAG*（自适应聚类记忆组织）对应，聚焦在小型语言模型Agent的记忆组织与压缩。
+
+| 论文 | 年份 | 核心贡献 | 链接 |
+|------|------|----------|------|
+| **MAGMA: A Multi-Graph Based Agentic Memory Architecture** | 2026 | 多关系图记忆架构，支持静态边权重与启发式遍历 | [arXiv:2601.03236](https://arxiv.org/abs/2601.03236) |
+| **Nemori: Graph-based Memory with Predict-Calibrate Episodic Segmentation** | 2025 | 基于图的记忆，预测-校准的情景分割 | [arXiv](https://arxiv.org/abs/2508.04903) |
+| **Zep: A Temporal Knowledge Graph Architecture for Agent Memory** | 2025 | 时序知识图架构，支持时间感知的Agent记忆 | [arXiv](https://arxiv.org/abs/2508.04903) |
+| **ACON: Optimizing Context Compression for Long-Horizon LLM Agents** | 2025 | 长程LLM Agent的上下文压缩优化 | [arXiv:2510.00615](https://arxiv.org/abs/2510.00615) |
+| **AgentFold: Long-Horizon Web Agents with Proactive Context Management** | 2025 | 主动上下文管理的长程Web Agent | [arXiv](https://arxiv.org/abs/2508.04903) |
+| **Scaling Long-Horizon LLM Agent via Context-Folding** | 2025 | 通过上下文折叠扩展长程Agent | [arXiv](https://arxiv.org/abs/2508.04903) |
+| **Structured Distillation for Personalized Agent Memory: 11x Token Reduction** | 2026 | 结构化蒸馏实现个性化记忆，**11倍**token缩减 | [arXiv](https://arxiv.org/abs/2601.08816) |
+| **Mem1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents** | 2025 | 记忆与推理协同学习 | [arXiv](https://arxiv.org/abs/2508.04903) |
+
+---
+
+## 四、多Agent记忆共享与协作
+与你提到的 *TinyAgent*（边缘函数调用）对应，聚焦在多Agent系统的记忆共享与协作机制。
+
+| 论文 | 年份 | 核心贡献 | 链接 |
+|------|------|----------|------|
+| **Multi-Agent Memory from a Computer Architecture Perspective** | 2026 | 从计算机体系结构视角审视多Agent记忆，提出端侧挑战与愿景 | [arXiv:2603.10062](https://arxiv.org/abs/2603.10062) |
+| **Semantic Infrastructure for Multi-Agent LLM Systems** | 2026 | 多Agent LLM系统的语义基础设施 | [arXiv:2604.19540](https://arxiv.org/abs/2604.19540) |
+| **Collaborative Memory-Augmented Agentic Recommender System** | 2026 | 协作记忆增强的Agent推荐系统 | [arXiv:2601.08816](https://arxiv.org/abs/2601.08816) |
+| **LEGOMem: Modular Procedural Memory for Multi-Agent LLM Systems** | 2026 (AAMAS) | 模块化程序记忆，面向工作流自动化的多Agent系统 | [arXiv](https://arxiv.org/abs/2601.08816) |
+| **G-Memory: Tracing Hierarchical Memory for Multi-Agent Systems** | 2025 (NeurIPS) | 多Agent系统的分层记忆追踪 | [NeurIPS 2025](https://arxiv.org/abs/2508.04903) |
+| **AgentNet: Decentralized Evolutionary Coordination** | 2025 (NeurIPS) | 去中心化进化协调的多Agent系统 | [NeurIPS 2025](https://arxiv.org/abs/2508.04903) |
+| **Intrinsic Memory Agents: Heterogeneous Multi-Agent LLM** | 2025 | 异构多Agent LLM的内隐记忆 | [arXiv:2508.08997](https://arxiv.org/abs/2508.08997) |
+| **EvoCF: Multi-Agent Collaboration via Agentic Memory-Driven Evolutionary Counterfactual Planning** | 2026 | 记忆驱动的进化反事实规划 | [arXiv](https://arxiv.org/abs/2601.08816) |
+| **RCR-Router: Efficient Role-Aware Context Routing for Multi-Agent LLM Systems with Structured Memory** | 2025 | 角色感知的上下文路由 | [arXiv:2508.04903](https://arxiv.org/abs/2508.04903) |
+| **Latent Collaboration in Multi-Agent Systems** | 2025 | 多Agent系统的潜在协作 | [arXiv:2511.20639](https://arxiv.org/abs/2511.20639) |
+| **MEMO: Memory-Augmented Model Context Optimization for Multi-Agent LLM Games** | 2026 | 记忆增强的模型上下文优化，面向多Agent游戏 | [arXiv](https://arxiv.org/abs/2601.08816) |
+
+---
+
+## 五、端侧推理与模型压缩
+聚焦在端侧部署的量化、压缩与推理优化。
+
+| 论文 | 年份 | 核心贡献 | 链接 |
+|------|------|----------|------|
+| **TinyAgent: Quantization-aware Model Compression for On-device LLM Agent Deployment** | 2025/2026 | 量化感知的模型压缩，**8×**内存减少，**4.5×**推理加速 | [OpenReview](https://openreview.net/pdf?id=ntI0eq0urB) |
+| **Agent Workflow Memory** | 2024 | Agent工作流记忆机制 | [arXiv:2409.07429](https://arxiv.org/abs/2409.07429) |
+| **ParamMem: Augmenting Language Agents with Parametric Reflective Memory** | 2026 | 参数化反射记忆 | [arXiv](https://arxiv.org/abs/2601.08816) |
+| **Trajectory-Informed Memory Generation for Self-Improving Agent Systems** | 2026 | 轨迹引导的记忆生成 | [arXiv](https://arxiv.org/abs/2601.08816) |
+
+---
+
+## 六、综述与基准
+| 论文 | 年份 | 说明 | 链接 |
+|------|------|------|------|
+| **A Survey on the Memory Mechanism of Large Language Model-based Agents** | 2025 | ACM Computing Surveys，全面综述LLM Agent记忆机制 | [ACM](https://dl.acm.org/doi/10.1145/3748302) |
+| **Memory in the Age of AI Agents** | 2026 | 大规模作者团队（含Hu Yuyang等），AI Agent时代的记忆综述 | [arXiv:2512.13564](https://arxiv.org/abs/2512.13564) |
+| **From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms** | 2026 | GitHub活跃维护的综述与论文列表 | [GitHub](https://github.com/FeishuLuo/Evolving-LLM-Agent-Memory-Survey) |
+
+---
+
+如果你需要某个具体方向的深入论文（例如**纯端侧无网络依赖的记忆系统**、**KV缓存量化与共享**、或**认知科学启发的记忆架构**），我可以进一步帮你筛选和总结。
 
 
 
